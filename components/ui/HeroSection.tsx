@@ -1,6 +1,12 @@
+'use client';
+import { useState } from 'react';
 import LoadingScreen from './LoadingScreen';
+import ContactModal from './ContactModal';
+
 
 export default function HeroSection() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   return (
     <>
       <LoadingScreen />
@@ -20,7 +26,7 @@ export default function HeroSection() {
                 Transform your life through discipline, strength, and dedication. Join our academy
                 to learn from a master with over 15 years of experience in martial arts.
               </p>
-              <button className="bg-red-800 text-white px-8 py-4 rounded-lg text-lg font-semibold 
+              <button onClick={() => setIsContactModalOpen(true)} className="bg-red-800 text-white px-8 py-4 rounded-lg text-lg font-semibold 
                              hover:bg-red-900 transition-colors duration-300">
                 Start Your Journey
               </button>
@@ -35,6 +41,10 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </>
   )
 }
