@@ -11,11 +11,18 @@ interface Student {
 
 const students: Student[] = [
   {
-    name: "yash",
+    name: "Aishwary sahu",
     belt: "Black Belt",
     achievements: "National Gold Medalist 2023",
     imageUrl: "/students/rahul.jpg",
     joinedYear: "2019"
+  },
+  {
+    name: "Prakhar sao",
+    belt: "Black Belt",
+    achievements: "National Gold Medalist 2023",
+    imageUrl: "/students/prakhar.jpg",
+    joinedYear: "2021"
   },
   {
     name: "Vikas sahu",
@@ -37,7 +44,29 @@ const students: Student[] = [
     achievements: "Rising Star Award 2023",
     imageUrl: "/students/tulika.jpg",
     joinedYear: "2021"
-  }
+  },
+  {
+    name: "Smriti pal",
+    belt: "Red Belt",
+    achievements: "Rising Star Award 2023",
+    imageUrl: "/students/smriti.jpg",
+    joinedYear: "2021"
+  },
+{
+    name: "Tanmay sahu",
+    belt: "Red Belt",
+    achievements: "Rising Star Award 2023",
+    imageUrl: "/students/tanmay.jpg",
+    joinedYear: "2021"
+  },
+{
+    name: "Chetany sahu",
+    belt: "Red Belt",
+    achievements: "Rising Star Award 2023",
+    imageUrl: "/students/chetany.jpg",
+    joinedYear: "2021"
+  },
+
 ];
 
 export default function StudentsSection() {
